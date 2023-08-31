@@ -2,7 +2,6 @@ from selenium import webdriver
 import chromedriver_autoinstaller
 import time
 import helium as he
-import csv
 import json
 
 chromedriver_autoinstaller.install()
@@ -13,6 +12,8 @@ chromedriver_autoinstaller.install()
 
 product = input("Ingrese el producto a buscar: ")
 ind = int(input("Ingrese el número de productos a buscar: "))
+
+print(f"buscando {product}...")
 
 he.start_chrome("https://www.fullh4rd.com.ar/")
 time.sleep(2)
@@ -108,23 +109,6 @@ if product_name3:
         price = price_text.replace("$", "").replace(".", "").replace(",", "")
         libreopcion_results.append({"Producto": name, "Precio": price})
 
-# Guardar resultados en un archivo CSV
-csv_filename = f"{product}_results.csv"
-with open(csv_filename, "w", newline="", encoding="utf-8") as csvfile:
-    fieldnames = ["Producto", "Precio"]
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-    writer.writeheader()
-
-    for result in fullhard_results:
-        writer.writerow(result)
-
-    for result in mercadolibre_results:
-        writer.writerow(result)
-
-    for result in libreopcion_results:
-        writer.writerow(result)
-
-print(f"Los resultados se han guardado en el archivo '{csv_filename}'.")
 
 # Guardar resultados en un archivo JSON
 json_filename = f"{product}_results.json"

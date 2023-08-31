@@ -1,0 +1,44 @@
+{
+    "Fullh4rd": [
+        {
+            "Producto": "HD SSD 480GB GIGABYTE SATA III 2.5\"",
+            "Precio": "27.30197"
+        },
+        {
+            "Producto": "HD SSD 480GB WD GREEN SATA III 2.5\"",
+            "Precio": "27.30197"
+        },
+        {
+            "Producto": "HD SSD 500GB PNY CS1031 M.2 NVME GEN3 2200MB/S 2280 +Q 480GB",
+            "Precio": "27.30322"
+        }
+    ],
+    "MercadoLibre": [
+        {
+            "Producto": "Disco s\u00f3lido interno Lexar LNQ100X480G 480GB",
+            "Precio": "21989"
+        },
+        {
+            "Producto": "Disco Solido Int. Lexar Ssd Nq100 480gb 2.5 Sata Pc Notebook",
+            "Precio": "22987"
+        },
+        {
+            "Producto": "Disco S\u00f3lido Interno Kingston Sa400s37/480g 480gb Negro",
+            "Precio": "23000"
+        }
+    ],
+    "LibreOpcion": [
+        {
+            "Producto": "Disco Ssd Netac Sa500 2.5 Sata3 120gb",
+            "Precio": " 9932\n"
+        },
+        {
+            "Producto": "Disco Ssd Patriot Burst Elite Solid 120gb Sata3 Pe000775",
+            "Precio": " 10057\n"
+        },
+        {
+            "Producto": "Disco Ssd Netac N930e Pro Pcle 3x4 M.2 2280 Nvme 3d Nand 128gb",
+            "Precio": " 10591\n"
+        }
+    ]
+}
